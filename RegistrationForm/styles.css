@@ -1,0 +1,79 @@
+body {
+  width: 100%;
+  /* vh tarayicinin pencere yuksekliginin yuzde birine  denk gelir  100vh tarayicinin tam yuksekligi 50vh yarisi anlaminda kullanilir*/
+  height: 100vh;
+  /* margin dış kenarları ile diğer öğeler veya tarayıcı kenarları arasındaki boşluğu ayarlayan bir CSS özelliğidir.  */
+  margin: 0;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+label {
+  /* display block verme sebebimiz label icindeki elemanlar yan yana dizili sekilde gozukuyordu ama block verdigimiz hepsi alt alta siralanmis bir sekilde gozukur */
+  display: block;
+  /* rem her zaman sayfanın kök (<html>) yazı boyutuna göre hesaplanır. Varsayılan olarak bu değer genelde 16 pikseldir. */
+  margin: 0.5rem 0;
+}
+h1,
+p {
+  margin: 1em auto;
+  text-align: center;
+}
+form {
+  margin: 0 auto;
+  max-width: 500px;
+  min-width: 300px;
+  /* vw gorunum alani genisligi anlamina gelir */
+  width: 60vw;
+  padding-bottom: 2em;
+}
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+/* son fieldset altindaki cizgiyi kaldirmak icin kullandik  */
+fieldset:last-of-type {
+  border: none;
+}
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+.inline {
+  /* unset ile varsayilan haline donmesini saglariz */
+  width: unset;
+  margin: 0 0.5em 0 0;
+  /* secilecek butonlar yazinin biraz ustunde duruyodu onu ortaladik */
+  vertical-align: middle;
+}
+input,
+textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+  
+}
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  /* vw gorunum alani genisligi anlamina gelir */
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  margin: 1em auto;
+  min-width: 300px;
+}
+input[type="file"] {
+  padding: 1px 2px;
+}
+a {
+  color: #dfdfe2;
+}
